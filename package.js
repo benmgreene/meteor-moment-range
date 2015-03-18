@@ -7,6 +7,17 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0.2.1');
-  api.addFiles('lib/moment-range/lib/moment-range.js');
+  api.versionsFrom("METEOR@0.9.0");
+
+  api.use(['momentjs:moment@2.9.0'], ['client', 'server']);
+
+  api.addFiles('lib/moment-range/lib/moment-range.bare.js');
+});
+
+Package.on_test(function (api) {
+  api.use([
+    'jquery@1.0.0',
+    'momentjs:moment@2.9.0'
+  ]);
+  api.addFiles('lib/moment-range/lib/moment-range.bare.js');
 });
