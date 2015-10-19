@@ -1,6 +1,6 @@
 Package.describe({
   name: 'benmgreene:moment-range',
-  version: '1.0.7',
+  version: '2.10.6',
   summary: 'Fancy date ranges for Moment.js packaged for Meteor.',
   git: 'https://github.com/benmgreene/meteor-moment-range',
   documentation: 'README.md'
