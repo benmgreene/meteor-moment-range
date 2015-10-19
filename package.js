@@ -9,15 +9,15 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom("METEOR@0.9.0");
 
-  api.use(['momentjs:moment@2.9.0'], ['client', 'server']);
+  api.use(['momentjs:moment@2.10.6'], ['client', 'server']);
 
-  api.addFiles('lib/moment-range/lib/moment-range.bare.js');
+  api.addFiles('lib/moment-range/dist/moment-range.js');
 });
 
 Package.on_test(function (api) {
   api.use([
     'jquery@1.0.0',
-    'momentjs:moment@2.9.0'
+    'momentjs:moment@2.10.6'
   ]);
-  api.addFiles('lib/moment-range/lib/moment-range.bare.js');
+  api.addFiles('lib/moment-range/dist/moment-range.js');
 });
